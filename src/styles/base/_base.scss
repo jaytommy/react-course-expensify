@@ -1,0 +1,24 @@
+// Common units are pixels. We will use rems
+// 1 rem = 16 px
+
+// Do this math to make rem base 10 like font-size
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
