@@ -1,14 +1,21 @@
 // Common units are pixels. We will use rems
 // 1 rem = 16 px
 
+// Set a universal selector for instructing browser to compute box height without margin and padding added last
+* {
+  box-sizing: border-box;
+}
+
 // Do this math to make rem base 10 like font-size
 html {
     font-size: 62.5%;
 }
 
 body {
+    color: $dark-gray;
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
+    line-height: 1.6;
 }
 
 button {
